@@ -1,7 +1,7 @@
 import logging
 
 print("test")
-logging.basicConfig(filename=logname,
+logging.basicConfig(filename="logFile",
                             filemode='a',
                             format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                             datefmt='%H:%M:%S',
