@@ -8,7 +8,7 @@ gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
 app.logger.setLevel(gunicorn_logger.level)
 
-@app.route('https://getstartedtrading.herokuapp.com/', methods=["POST"])
+@app.route('/', methods=["POST"])
 def hello():
     app.logger.debug('This is a DEBUG log record.')
     app.logger.info('This is an INFO log record.')
