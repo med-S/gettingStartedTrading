@@ -1,4 +1,4 @@
-import logging.config
+import logging
 
 print("test")
 logging.basicConfig(filename=logname,
