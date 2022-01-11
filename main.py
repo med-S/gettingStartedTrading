@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+import logging
 
 app = Flask(__name__) # create Flask server
 # get instance of logger and set log severity as defined by the cli parameter
