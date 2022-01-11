@@ -4,13 +4,13 @@ import logging
 
 app = Flask(__name__) # create Flask server
 # get instance of logger and set log severity as defined by the cli parameter
+logging.basicConfig(filename='myapp.log', level=logging.INFO)
 gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
 app.logger.setLevel(gunicorn_logger.level)
 
 @app.route('/', methods=["GET"])
 def hello():
-    app.logger.basicConfig(filename='myapp.log', level=logging.INFO)
     app.logger.debug('This is a DEBUG log record.')
     app.logger.info('This is an INFO log record.')
     app.logger.warning('This is a WARNING log record.')
