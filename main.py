@@ -16,4 +16,4 @@ def hello():
     app.logger.error('This is an ERROR log record.')
     app.logger.critical('This is a CRITICAL log record.')
     print("TEST")
-    return 'Hello world!'
+    return 'Hello Abdessamad, rak bkhayr! chabe3 ch3iiir, khedam mzn'
