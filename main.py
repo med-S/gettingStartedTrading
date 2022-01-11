@@ -8,5 +8,3 @@ logging.basicConfig(filename="logFile",
                             level=logging.DEBUG)
 
 logging.info("Running Urban Planning")
-
-self.logger = logging.getLogger('urbanGUI')
