@@ -10,6 +10,7 @@ app.logger.setLevel(gunicorn_logger.level)
 
 @app.route('/', methods=["GET"])
 def hello():
+    app.logger.basicConfig(filename='myapp.log', level=logging.INFO)
     app.logger.debug('This is a DEBUG log record.')
     app.logger.info('This is an INFO log record.')
     app.logger.warning('This is a WARNING log record.')
